@@ -912,7 +912,7 @@ namespace WIMInterop {
 
 if (-not ([System.Management.Automation.PSTypeName]'WIMInterop.WimFile').Type)
 {
-    Add-Type -TypeDefinition $code -ReferencedAssemblies "System.Xml","System.Linq","System.Xml.Linq"
+    Add-Type -TypeDefinition $code -ReferencedAssemblies "Microsoft.Win32.Primitives","System.Collections","System.Core","System.Text.RegularExpressions","System.Xml","System.Xml.XDocument","System.Xml.XPath.XDocument","System.Linq","System.Xml.Linq"
 }
 
 function Get-WimFileImagesInfo
